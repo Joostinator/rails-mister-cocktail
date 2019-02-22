@@ -1,0 +1,23 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cms.splendidtable.org/sites/default/files/styles/w2000/public/blt%20cocktail.jpg?itok=uv_d_Mjo);">
+  <div class="container">
+    <h1>BEST <strong>F***ING</strong> COCKTAIL <strong>IN THE MOTHERF***ING</strong> WORLD!</h1>
+    <p>Change your life and learn to DRINK at one of our campuses around the world.</p>
+  </div>
+</div>
+
+<div class="container">
+
+<ol class = "cards">
+<% @cocktails.each do |cocktail| %>
+ <li><p> <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  <div class="image">
+  <%= image_tag "#{cocktail.image}", alt: "alttext" %>
+  </div>
+  <%= link_to "❌",cocktail, method: :delete %></p></li>
+<% end %>
+</ol>
+
+</div>
+
+
+
