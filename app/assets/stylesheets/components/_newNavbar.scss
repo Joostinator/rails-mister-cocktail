@@ -1,17 +1,28 @@
 .navbar-lewagon {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: white;
-  padding: 16px 24px;
-  a {
-    color: black;
-  }
-}
+    height: 10em;
+    position: relative }
 
 .navbar-lewagon .brand {
-  width: 40px;
-}
+   margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
+div.container4 {
+    height: 10em;
+    position: relative }
+div.container4 p {
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+
 
 .navbar-lewagon .navbar-lewagon-actions {
   display: flex;
